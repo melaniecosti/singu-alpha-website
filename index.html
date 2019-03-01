@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Singularity viewer alpha builds</title>
+  
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./singularity.css">
+    <script>
+        function toggleChangelog(divId) {
+            
+            if($(divId).children().length == 0 ){
+                $(divId).load("change6994.html");
+            } else {
+                $(divId).empty();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+            <div style="height: 144px;width:944px;background-image: url('http://alpha.singularityviewer.org/alpha/images/singularity_logo.gif');display:table;"><h4 class="text-right align-bottom" style="height:100%;display:table-cell; vertical-align:middle">Automated alpha builds</h4></div>
+            <div class="text-center">
+                
+                
+                <div class="row">
+                    
+                    <div class="col-2"><p style="float: left;">Select a channel:</p></div>
+                    <div class="col-1"><select>
+                        <option value="SingularityAlpha">SingularityAlpha</option>
+                        <option value="Second channel">Second channel</option>
+                        <option value="Third Channel">Third Channel</option>
+                    </select></div>
+                    <div class="col-9"></div>
+                </div>
+            </div>
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4"><span class="buildnumber" >Build 6994</span> <span >(f9897b607b)</span></div>
+                                        <!--<div class="col-1"><span class="badge badge-info">Show changes (2) >> </span></div>-->
+                                        
+                                        <div class="col-7"><p class="text-right" >2018-04-09 08:19:44 (10 months ago)</p></div>
+                                        <div class="col-1">
+                                            <button type="button" class="btn btn-info" onclick="toggleChangelog('#change-6994')">
+                                                Changes <span class="badge badge-light">2</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="card-text" id="change-6994" ></div>        
+
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary">Windows 64</a>
+                            <a href="#" class="btn btn-primary">Linux 64</a>
+                            <a href="#" class="btn btn-primary">Mac OSX</a>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

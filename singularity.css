@@ -1,0 +1,24 @@
+body{
+  background-color: #333333;  
+  color:white;
+}
+.card{
+    background-color: #555555;
+    margin-bottom:5px;
+}
+.card-title{
+    background-color: #222222;
+    border-radius: 10px;
+    margin-bottom:5px;
+}
+.buildnumber {
+    color:#cccccc;
+    font-weight: bold;
+    font-size: 16pt;
+}
+.visible {
+    visibility: visible !important;
+}
+.invisible {
+    visibility: hidden !important;
+}
